@@ -1,0 +1,6 @@
+defaultSettings:
+  defaultReplicaCount: 1
+persistence:
+  defaultClass: true
+  defaultFsType: xfs
+  defaultClassReplicaCount: 1
