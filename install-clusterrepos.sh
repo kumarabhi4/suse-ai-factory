@@ -1,11 +1,14 @@
 #!/bin/bash
 
+source ./params.sh
+
 # SUSE Application Collection - service account values
-APPCOL_USER=
-APPCOL_TOKEN=
+#APPCOL_USER=
+#APPCOL_TOKEN=
 
 # SUSE AI Subscription key
-SUSE_AI_SUB=
+#SUSE_AI_SUB=
+#SUSE_AIF_NVIDIA_API_KEY=
 
 echo set vars first
 exit
@@ -24,7 +27,7 @@ stringData:
   username: $APPCOL_USER
   password: $APPCOL_TOKEN
 EOF
-
+#
 # clusterrepo
 cat <<EOF | kubectl apply -f -  > /dev/null 2>&1
 apiVersion: catalog.cattle.io/v1
@@ -54,7 +57,7 @@ stringData:
   username: regcode
   password: $SUSE_AI_SUB
 EOF
-
+#
 # clusterrepo
 cat <<EOF | kubectl apply -f -  > /dev/null 2>&1
 apiVersion: catalog.cattle.io/v1
