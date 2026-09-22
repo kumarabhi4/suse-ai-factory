@@ -1,4 +1,3 @@
-```markdown
 # Comprehensive Deployment and Troubleshooting Guide: NVIDIA AI-Q Blueprint on Kubernetes
 
 This document consolidates and organizes the deployment prerequisites, hardware configuration (Time-Slicing vs. MIG), cluster tuning, and resolution of common errors encountered when standing up the **NVIDIA AI-Q** (with RAG) blueprint.
@@ -44,7 +43,6 @@ fs.inotify.max_user_watches = 524288
 fs.inotify.max_user_instances = 8192
 fs.file-max = 2097152
 
-```
 
 Apply with: `sudo sysctl --system`.
 
